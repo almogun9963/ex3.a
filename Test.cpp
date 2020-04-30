@@ -119,11 +119,12 @@ TEST_CASE("RealVariable")
             CHECK(solve(2*x == 10) == 5);
 }
 
-//TEST_CASE("ComplexVariable"){
-//    ComplexVariable  x ;//the complex variable (with i)
-////            CHECK(solve(x == +3i+5) == std::complex<double>(5,3));
-////            CHECK(solve(-x == -2i) == std::complex<double>(0,2));
-////            CHECK(solve(5*x+14i == 10*x+4i) == std::complex<double>(0,2));
-////            CHECK(solve(5*x == 25i) == std::complex<double>(0,5));
-////            CHECK_THROWS(solve(x^2 == 5i));
-//}
+TEST_CASE("ComplexVariable")
+{
+    ComplexVariable  x ;//the complex variable (with i)
+            CHECK(solve(x == +3i+5) == std::complex<double>(5,3));
+            CHECK(solve(-x == -2i) == std::complex<double>(0,2));
+            CHECK(solve(5*x+14i == 10*x+4i) == std::complex<double>(0,2));
+            CHECK(solve(5*x == 25i) == std::complex<double>(0,5));
+            CHECK_THROWS(solve(x^2 == 5i));
+}

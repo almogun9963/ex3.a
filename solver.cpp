@@ -47,7 +47,7 @@ namespace solver
 
     ComplexVariable operator-(const ComplexVariable& x, const complex<double> num) { return x; }
     ComplexVariable operator-(const complex<double> num, const ComplexVariable& x) { return x; }
-    ComplexVariable operator-(const ComplexVariable& cv1, const ComplexVariable& cv2) { return cv1;
+    ComplexVariable operator-(const ComplexVariable& cv1, const ComplexVariable& cv2) { return cv1;}
 
     ComplexVariable operator^(const ComplexVariable& x, const complex<double> num) { return x; }
 
